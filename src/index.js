@@ -6,9 +6,9 @@ module.exports = function towelSort (matrix) {
     let arrSort = [];
     for (let j=0; j < matrix.length; j++) {
       if (j % 2 == 0) {
-       for (let i=0; i < matrix[0].length; i++) {arrSort.push(matrix[j][i])}
+       for (let i=0; i < matrix[j].length; i++) {arrSort.push(matrix[j][i])}
       }
-      else { for (let i = (matrix[0].length - 1); i >=0; i--) {arrSort.push(matrix[j][i])}}
+      else { for (let i = (matrix[j].length - 1); i >=0; i--) {arrSort.push(matrix[j][i])}}
     }
     return arrSort;
 }
